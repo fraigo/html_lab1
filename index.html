@@ -1,12 +1,16 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
 <!--
 HTML / CSS Lab 1
+================
+
 Author: Francisco Igor (franciscoigor@gmail.com)
-Dexcription: HTML/CSS document creation with HTML tags and basic CSS formatting
+Description: HTML/CSS document creation with HTML tags and basic CSS formatting
+
 -->
 	<title>HTML/CSS Lab 1</title>
+	<meta charset="UTF-8">
 </head>
 <body style="margin:0px; font-family:Arial, Helvetica, sans-serif;">
 <div style="text-align:center;">
@@ -18,10 +22,10 @@ Dexcription: HTML/CSS document creation with HTML tags and basic CSS formatting
 </div>
 <div class="content">
 	<h3>HTML basic structure</h3>
-	<p>
+	<div>
 	The basic structure of an HTML page is:
 	<ol style="list-style-type: decimal">
-		<li><code>!doctype</code> (HTML document type)</li>
+		<li><code>!DOCTYPE</code> (HTML document type)</li>
 		<li><code>HTML</code> tag (document container)
 		<ol style="list-style-type: lower-alpha">
 			<li><code>HEAD</code> tag (document header, invisible part)</li>
@@ -29,10 +33,10 @@ Dexcription: HTML/CSS document creation with HTML tags and basic CSS formatting
 		</ol>
 		
 		</li>
-	</ol>	
-	</p>
+	</ol>
+	</div>
 	<h3>Headings</h3>
-	<p>
+	<div>
 	The basic headings are:
 	<ul>
 		<li><code>H1</code>: First level header</li>
@@ -40,15 +44,23 @@ Dexcription: HTML/CSS document creation with HTML tags and basic CSS formatting
 		<li><code>H3</code>: Third level header</li>
 		<li><code>H4</code>: Fourth level header</li>
 	</ul>	
-	</p>
+	</div>
 	<h3>Links</h3>
-	<p>
+	<div>
 	Link usage:
 	<ul>
 		<li>Link to the <a href="index.html">local document path (relative)</a></li>
 		<li>Link to an <a href="http://www.google.com" target="_blank">external site</a></li>
-		<li>Link using an image <a href="http://www.google.com/search?q=html" target="_blank"><img src="google.png" height="30" style="vertical-align:middle" ></a></li>
+		<li>Link using an image 
+			<a href="http://www.google.com/search?q=html" target="_blank">
+				<img src="google.png" alt="Google logo" height="30" style="vertical-align:middle">
+			</a>
+		</li>
 	</ul>	
-	</p>
+	</div>
+	<h3>Iframe</h3>
+	<div style="text-align:center">
+		<iframe name="external" src="https://www.wikipedia.org" width="600" height="300" ></iframe>
+	</div>
 </div>
 </body>
