@@ -10,9 +10,26 @@ Description: HTML/CSS document creation with HTML tags and basic CSS formatting
 
 -->
 	<title>HTML/CSS Lab 1</title>
+	<style>
+	body{
+		margin:0px 10px; 
+		font-family:Arial, Helvetica, sans-serif;
+	}
+	h3{
+		color:#080;
+		border: 2px dotted #0A0;
+		background-color:#EFE;
+		margin:20px 5px;
+	}
+	span{
+		border: 1px solid #8C8;
+		padding: 5px;
+		border-radius:3px;
+	}
+	</style>
 	<meta charset="UTF-8">
 </head>
-<body style="margin:0px; font-family:Arial, Helvetica, sans-serif;">
+<body >
 <div style="text-align:center;">
 	<h1 style="background-color: #008;color:#FFF;padding: 8px 16px;">HTML Demo</h1>
 	<h2 style="font-style:italic">Basic HTML/CSS demo with examples</h2>
@@ -20,7 +37,9 @@ Description: HTML/CSS document creation with HTML tags and basic CSS formatting
 	Some examples of use of basic HTML tags
 	</em>
 </div>
+<hr>
 <div class="content">
+
 	<h3>HTML basic structure</h3>
 	<div>
 	The basic structure of an HTML page is:
@@ -35,6 +54,8 @@ Description: HTML/CSS document creation with HTML tags and basic CSS formatting
 		</li>
 	</ol>
 	</div>
+
+
 	<h3>Headings</h3>
 	<div>
 	The basic headings are:
@@ -45,6 +66,7 @@ Description: HTML/CSS document creation with HTML tags and basic CSS formatting
 		<li><code>H4</code>: Fourth level header</li>
 	</ul>	
 	</div>
+
 	<h3>Links</h3>
 	<div>
 	Link usage:
@@ -58,9 +80,34 @@ Description: HTML/CSS document creation with HTML tags and basic CSS formatting
 		</li>
 	</ul>	
 	</div>
-	<h3>Iframe</h3>
-	<div style="text-align:center">
-		<iframe name="external" src="https://www.wikipedia.org" width="600" height="300" ></iframe>
+
+	<h3>Colors</h3>
+	<p>Using the #RGB format:</p>
+	<div style="text-align:left">
+		<span style="color:#000">Black #000</span>
+		<span style="color:#F00">Red #F00</span>
+		<span style="color:#0F0">Green #0F0</span>
+		<span style="color:#00F">Blue #00F</span>
 	</div>
+
+	<h3>Special characters</h3>
+	<p>Using the <code>&amp;code;</code> format:</p>
+	<div style="text-align:left">
+		<span >&amp; (Ampersand <code>&amp;amp;)</code></span>
+		<span >&lt; (Less than, open tag character <code>&amp;lt;)</code></span>
+		<span >&gt; (Greater than, close tag character <code>&amp;gt;)</code></span>
+		
+	</div>
+
+
+	<h3>Iframe</h3>
+	Embedding a page inside this page:
+	<div style="text-align:center">
+		<iframe name="external" src="https://www.wikipedia.org" width="600" height="300" >
+		</iframe>
+	</div>
+
+	
+
 </div>
 </body>
